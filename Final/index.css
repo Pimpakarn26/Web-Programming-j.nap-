@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+:root{
+    --blue76: rgba(76, 76, 168, 0.76);
+    --blue27: rgba(27, 1, 97, 0.973);
+    --light-color:#666;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(27, 1, 97, 0.973);
+    font-family: 'poppins' , sans-serif;
+    height: 350vh;
+}
+/*Header Section*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blue76);
+    transition: 0.5s;
+    z-index: 1000;
+
+}
+header .logo{
+    position: relative;
+    color: rgba(27, 1, 97, 0.973);
+    text-decoration: none;
+    font-size: 1..1rem;
+    font-weight: 700;
+}
+header .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 18px;
+    font-size: 12.5px;
+
+}
+header ul li a{
+    color: floralwhite;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+  background: lightgoldenrodyellow;  
+  color: black;
+  box-shadow: 0 0 10px lightgoldenrodyellow;
+}
+header .action .searchBx{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffff;
+    border-radius: 5px;
+}
+header .action .searchBx i{
+    font-size: 1.2rem;
+    margin: 10px;
+    color: #222;
+}
+header .action .searchBx input{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #222;
+}
+
+/*Home Section*/
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+.banner .bg .content h2{
+    font-size: 4rem;
+    color: #ffff;
+    letter-spacing: 1px;
+}
+.banner .bg .content p{
+    font-size: 1rem;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+}
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ffff;
+    letter-spacing:1px;
+}
+.banner .bg .content a:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2e;
+    box-shadow: 0 0 10px lightgoldenrodyellow;
+}
+.banner .bg img{
+    width: 600px;
+}
+
+/*About Section*/
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .contentBx{
+    width: 50%;
+    margin: 20px;
+}
+.about .contentBx h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffff;
+}
+.about .contentBx p{
+    max-width: 600px;
+    text-align: justify;
+    color: #dbd9d9;
+}
+.about .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ffff;
+    letter-spacing:1px;
+}
+.about .contentBx a:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2e;
+    box-shadow: 0 0 10px lightgoldenrodyellow;
+}
+
+/*Games Section*/
+.games .content .sub-heading h3{
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+}
+.games .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.7rem;
+    justify-content: center;
+    color: #fff;
+}
+.games .box-container .box{
+    padding: 1.5rem;
+    background: #d4d3d3;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.games .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+.games .box-container .box .fa-eye:hover{
+    background: var(--blue27);
+    color: #fff;
+}
+.games .box-container .box .fa-eye{
+    left: -15rem;
+}
+.games .box-container .box:hover .fa-eye{
+    left: 1.5rem;
+}
+
+.games .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+}
+.games .box-container .box h3{
+    color: #222;
+    font-size: 2.5rem;
+}
+.games .box-container .box .stars{
+    padding: 1rem 0;
+}
+.games .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: rgba(252, 252, 20, 0.74);
+}
+.games .box-container .box span{
+    color: var(--blue76);
+    font-weight: bolder;
+    margin-right: 1.5rem;
+    align-items: center;
+    font-size: 2rem;
+}
+.games .box-container .box a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #d4d3d3;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #1d1a1a;
+    letter-spacing:1px;
+}
+.games .box-container .box a:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2e;
+    box-shadow: 0 0 10px lightgoldenrodyellow;
+}

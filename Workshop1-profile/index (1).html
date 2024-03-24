@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pimpakarn Portfolio</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container"></div>
+        <nav>
+            <img src="images/logo.png" alt="logo" class="logo" />
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfoilo</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span> Pimpakarn Kucharoensrichan </span> <br /> From Nakhon pathom</h1>
+        </div>
+        </div>
+
+
+    </header>
+    <!-- About Section -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-1.jpg" alt="user" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium atque impedit excepturi
+                        vitae deserunt dolorum perferendis, harum, nobis assumenda cum eaque doloribus. Commodi sit
+                        excepturi sed nesciunt magnam saepe omnis!
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI</span> <br /> Designing Web/App interface</li>
+                            <li><span>Web Development</span> <br /> Web application Development</li>
+                            <li><span>App Development</span> <br /> Building Android/ios App </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content active-tab" id="experience">
+                        <ul>
+                            <li><span>2019-2020</span> <br />จัดทำโครงการซ่อมแซมบ้านผู้ยากไร้
+                                <br />ภารกิจเปิดหมวกรับบริจาคเพื่ออนำเงินไปช่วยเหลือซ่อมแซมบ้านผู้ยากไร้ </li>
+                            <li><span>2020-2021</span> <br />เข้าร่วมการแข่งขันคิดเลขเร็ว"เกม24"ชั้นมัธยมตอนปลาย
+                                ได้รับรางวัลเหรียญทองแดง </li>
+                            <li><span>2021-2022</span> <br />เข้าร่วมการแข่งขันต่อภาพ"TANGRAM"ชั้นมัธยมตอนปลาย
+                                ได้รับรางวัลเหรียญทองแดง </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>ระดับชั้นอนุบาล-ระดับชั้นมัธยมศึกษาตอนต้น</span> <br />
+                                โรงเรียนบ้านวังตะเคียน(ขยันการนาวีราฎร์อุทิศ)</li>
+                            <li><span>ระดับชั้นมัธยมศึกษาตอนปลาย</span> <br /> โรงเรียนบ้านทุ่งนาวิทยา</li>
+                            <li><span>ระดับชั้นอุดมศึกษา</span> <br /> มหาวิทยาลัย ราชภัฏนครปฐม</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Services/Projects Section -->
+<div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="services-item">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur omnis illo alias explicabo nisi quas, voluptates nihil, dolorem enim provident velit suscipit earum fugiat odit laboriosam? Totam, laudantium enim.</p>
+                        <a href="#">Learn More ...</a>
+                </div>
+                <div class="services-item">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quos laborum dolor perferendis quo odit, quas repudiandae quia non! Unde, veritatis totam! Tempora aliquid maiores, dolor tenetur nisi unde voluptatum?</p>
+                    <a href="#">Learn More ...</a>
+                </div>
+                <div class="services-item">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quos laborum dolor perferendis quo odit, quas repudiandae quia non! Unde, veritatis totam! Tempora aliquid maiores, dolor tenetur nisi unde voluptatum?</p>
+                    <a href="#">Learn More ...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto maiores corporis
+                            inventore laborum,
+                            illum temporibus, placeat dicta earum assumenda sint,
+                            officiis accusantium! Id, nemo at. Rem cumque magnam nemo!</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto maiores corporis
+                            inventore laborum,
+                            illum temporibus, placeat dicta earum assumenda sint,
+                            officiis accusantium! Id, nemo at. Rem cumque magnam nemo!</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto maiores corporis
+                            inventore laborum,
+                            illum temporibus, placeat dicta earum assumenda sint,
+                            officiis accusantium! Id, nemo at. Rem cumque magnam nemo!</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contect Section -->
+<div class="contect">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p<i class="fa-solid fa-paper-plane"></i>>654259009@webmail.npru.ac.th</p>
+                <p<i class="fa-solid fa-phone"></i>>0624201938</p>
+                <div class="social-icons">
+                    <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="downloads/my-cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="text" name="email" placeholder="Your Email" required />
+                    <textarea name="message" id="message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!--Copyright Section-->
+<div class="copyright">
+    <p>Copyright <i class="fa-solid fa-copyright"></i> Pimpakarn. 
+     Mede with <i class="fa-solid fa-heart"></i>By Pimpakarn</p>
+</div>
+
+
+    <script>
+        const tablinks = document.getElementsByClassName("tab-link");
+        const tabcontents = document.getElementsByClassName("tab-content");
+        const opentab = (tabname) => {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>
